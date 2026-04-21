@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="dashboard.html">← Back</a>
+        <h1>New Product</h1>
+        <div class="card">
+            <input type="text" id="prod-name" placeholder="Product Name" required>
+            <input type="text" id="prod-barcode" placeholder="Barcode (Unique)" required>
+            <select id="prod-category">
+                <option value="Dairy">Dairy</option>
+                <option value="Bakery">Bakery</option>
+                <option value="Meat">Meat</option>
+                <option value="Medicine">Medicine</option>
+                <option value="Other">Other</option>
+            </select>
+            <button id="btn-save-prod" class="btn-primary">Save Product</button>
+        </div>
+        <h2>Product List</h2>
+        <div id="product-list"></div>
+    </div>
+    <script type="module" src="js/products.js"></script>
+</body>
+</html>
